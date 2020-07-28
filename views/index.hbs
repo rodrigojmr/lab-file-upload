@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
 <p>Welcome Ironhacker!</p>
+<div class="posts-grid">
+{{#each posts}}
+  <a href="/post/{{id}}">
+    <img src="{{picPath}}" alt="">
+  </a>
+{{/each}}

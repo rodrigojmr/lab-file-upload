@@ -1,0 +1,9 @@
+<div class="post">
+  <h2>{{post.picName}}</h2>
+  <img src="{{post.picPath}}" alt="">
+  <p>{{post.content}}</p>
+  by {{post.creatorId.username}}
+  {{#if errorMessage}}
+    <p class="error">{{errorMessage}}</p>
+  {{/if}}
+</div>

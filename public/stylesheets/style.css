@@ -118,3 +118,23 @@ ul li {
   font-weight: bold;
   font-size: 2em;
 }
+
+.icon {
+  float: right;
+  width: 400px;
+  height: auto;
+}
+
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.posts-grid img {
+  max-width: 400px;
+}
+
+.posts-grid a:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
