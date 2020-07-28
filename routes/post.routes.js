@@ -19,7 +19,7 @@ router.get('/create', routeGuard, (req, res) => {
   res.render('posts/create');
 });
 
-router.post('/create', upload.single('image'), (req, res, next) => {
+router.post('/create', routeGuard, upload.single('image'), (req, res, next) => {
   const { content, imageName } = req.body;
   const url = req.file.path;
   const id = req.session.currentUser._id;
